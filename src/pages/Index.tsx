@@ -3,6 +3,7 @@ import Icon from "@/components/ui/icon";
 import { HeroSection } from "@/components/HeroSection";
 import { PromoSection } from "@/components/PromoSection";
 import { PrizesAndServices } from "@/components/PrizesAndServices";
+import { BeforeAfterGallery } from "@/components/BeforeAfterGallery";
 import { ReviewsAndContacts } from "@/components/ReviewsAndContacts";
 
 const Index = () => {
@@ -30,6 +31,9 @@ const Index = () => {
               <button onClick={() => scrollToSection('services')} className="text-sm hover:text-primary transition-colors">
                 Услуги
               </button>
+              <button onClick={() => scrollToSection('gallery')} className="text-sm hover:text-primary transition-colors">
+                Работы
+              </button>
               <button onClick={() => scrollToSection('reviews')} className="text-sm hover:text-primary transition-colors">
                 Отзывы
               </button>
@@ -47,6 +51,7 @@ const Index = () => {
       <HeroSection scrollToSection={scrollToSection} />
       <PromoSection />
       <PrizesAndServices />
+      <BeforeAfterGallery />
       <ReviewsAndContacts scrollToSection={scrollToSection} />
     </div>
   );

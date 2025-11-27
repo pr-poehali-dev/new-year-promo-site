@@ -217,14 +217,13 @@ export const ReviewsAndContacts = ({ scrollToSection }: ReviewsAndContactsProps)
             <div>
               <h4 className="font-bold mb-4">Социальные сети</h4>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-secondary-foreground/10 rounded-lg flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors">
-                  <Icon name="Instagram" size={20} />
+                <a href="https://t.me/lana_kosmetolog_krd" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-secondary-foreground/10 rounded-lg flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors">
+                  <Icon name="Send" size={20} />
                 </a>
                 <a href="#" className="w-10 h-10 bg-secondary-foreground/10 rounded-lg flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors">
-                  <Icon name="Facebook" size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-secondary-foreground/10 rounded-lg flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors">
-                  <Icon name="Youtube" size={20} />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm-2.95 14.5H9.88c-2.2 0-3.88-1.68-3.88-3.88V9.38c0-2.2 1.68-3.88 3.88-3.88h2.24c2.2 0 3.88 1.68 3.88 3.88v3.24c0 2.2-1.68 3.88-3.88 3.88z"/>
+                  </svg>
                 </a>
               </div>
             </div>
