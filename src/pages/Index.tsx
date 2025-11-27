@@ -205,7 +205,7 @@ const Index = () => {
             <Card className="bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_100%] animate-shimmer border-0">
               <CardContent className="p-8">
                 <p className="text-white text-lg font-medium">
-                  ⏰ Акция действует только в декабре 2024! Успейте записаться и получить свой подарок
+                  ⏰ Акция действует только в декабре 2025! Успейте записаться и получить свой подарок
                 </p>
               </CardContent>
             </Card>
@@ -441,7 +441,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-secondary-foreground/20 pt-8 text-center text-secondary-foreground/60">
-            <p>© 2024 Aesthetics. Все права защищены.</p>
+            <p>© 2025 Aesthetics. Все права защищены.</p>
           </div>
         </div>
       </footer>
