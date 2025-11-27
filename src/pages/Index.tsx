@@ -70,6 +70,33 @@ const Index = () => {
     }
   ];
 
+  const reviews = [
+    {
+      name: "Анна Соколова",
+      text: "Лана - настоящий профессионал! После курса биоревитализации кожа стала упругой и сияющей. Очень внимательное отношение к каждому клиенту.",
+      rating: 5,
+      procedure: "Биоревитализация"
+    },
+    {
+      name: "Мария Петрова",
+      text: "Делаю чистки лица уже полгода. Результат превзошёл все ожидания! Кожа чистая, поры сузились. Лана всегда подскажет и объяснит каждый этап.",
+      rating: 5,
+      procedure: "Чистка лица"
+    },
+    {
+      name: "Елена Кузнецова",
+      text: "Прекрасный косметолог с золотыми руками! Массаж лица - это просто волшебство. Ушла отёчность, овал лица подтянулся. Рекомендую!",
+      rating: 5,
+      procedure: "Массаж лица"
+    },
+    {
+      name: "Ольга Васильева",
+      text: "Очень довольна результатом мезотерапии. Лана индивидуально подобрала препарат именно для моей кожи. Профессионализм на высшем уровне!",
+      rating: 5,
+      procedure: "Мезотерапия"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-blue-50/30 to-white">
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-border">
@@ -88,6 +115,9 @@ const Index = () => {
               </button>
               <button onClick={() => scrollToSection('services')} className="text-sm hover:text-primary transition-colors">
                 Услуги
+              </button>
+              <button onClick={() => scrollToSection('reviews')} className="text-sm hover:text-primary transition-colors">
+                Отзывы
               </button>
               <button onClick={() => scrollToSection('contacts')} className="text-sm hover:text-primary transition-colors">
                 Контакты
@@ -308,6 +338,47 @@ const Index = () => {
               alt="Кабинет косметологии"
               className="rounded-3xl shadow-2xl w-full h-[400px] object-cover"
             />
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" className="py-20 px-4 bg-gradient-to-br from-blue-50/30 to-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center space-y-4 mb-16 animate-fade-in">
+            <Badge className="bg-primary/10 text-primary border-primary/20">
+              Отзывы клиентов
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold">Что говорят о нас</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Мы ценим доверие наших клиентов и стремимся превзойти ожидания
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {reviews.map((review, index) => (
+              <Card 
+                key={index}
+                className="hover:shadow-xl transition-all duration-300 animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="font-bold text-lg">{review.name}</h3>
+                      <p className="text-sm text-muted-foreground">{review.procedure}</p>
+                    </div>
+                    <div className="flex gap-1">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-accent fill-accent" size={16} />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {review.text}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
