@@ -12,7 +12,7 @@ const prizes = [
   {
     icon: "Percent",
     title: "Персональная скидка",
-    description: "До 30% на услуги в 2025 году",
+    description: "До 30% на последующие услуги",
     badge: "Гарантированно"
   },
   {
