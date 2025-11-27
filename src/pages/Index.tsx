@@ -92,7 +92,9 @@ const Index = () => {
               <button onClick={() => scrollToSection('contacts')} className="text-sm hover:text-primary transition-colors">
                 Контакты
               </button>
-              <Button className="bg-accent hover:bg-accent/90">Записаться</Button>
+              <a href="https://t.me/lana_kosmetolog_krd" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-accent hover:bg-accent/90">Записаться</Button>
+              </a>
             </div>
           </div>
         </div>
@@ -339,12 +341,12 @@ const Index = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Icon name="Mail" className="text-primary" size={24} />
+                    <Icon name="Send" className="text-primary" size={24} />
                   </div>
                   <div>
-                    <p className="font-medium mb-1">Email</p>
-                    <a href="mailto:info@aesthetics.ru" className="text-lg hover:text-primary transition-colors">
-                      info@aesthetics.ru
+                    <p className="font-medium mb-1">Telegram</p>
+                    <a href="https://t.me/lana_kosmetolog_krd" target="_blank" rel="noopener noreferrer" className="text-lg hover:text-primary transition-colors">
+                      @lana_kosmetolog_krd
                     </a>
                   </div>
                 </div>
@@ -375,10 +377,12 @@ const Index = () => {
                 </div>
               </div>
 
-              <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-lg">
-                <Icon name="Send" className="mr-2" size={20} />
-                Записаться на процедуру
-              </Button>
+              <a href="https://t.me/lana_kosmetolog_krd" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-lg">
+                  <Icon name="Send" className="mr-2" size={20} />
+                  Записаться в Telegram
+                </Button>
+              </a>
             </div>
 
             <div className="relative animate-scale-in">
