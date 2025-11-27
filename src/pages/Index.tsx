@@ -352,6 +352,18 @@ const Index = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-[#25D366]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Icon name="MessageCircle" className="text-[#25D366]" size={24} />
+                  </div>
+                  <div>
+                    <p className="font-medium mb-1">WhatsApp</p>
+                    <a href="https://wa.me/79181352147" target="_blank" rel="noopener noreferrer" className="text-lg hover:text-primary transition-colors">
+                      +7 (918) 135-21-47
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Icon name="MapPin" className="text-primary" size={24} />
                   </div>
@@ -377,12 +389,20 @@ const Index = () => {
                 </div>
               </div>
 
-              <a href="https://t.me/lana_kosmetolog_krd" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-lg">
-                  <Icon name="Send" className="mr-2" size={20} />
-                  Записаться в Telegram
-                </Button>
-              </a>
+              <div className="grid grid-cols-2 gap-4">
+                <a href="https://t.me/lana_kosmetolog_krd" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="w-full bg-accent hover:bg-accent/90">
+                    <Icon name="Send" className="mr-2" size={20} />
+                    Telegram
+                  </Button>
+                </a>
+                <a href="https://wa.me/79181352147" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white">
+                    <Icon name="MessageCircle" className="mr-2" size={20} />
+                    WhatsApp
+                  </Button>
+                </a>
+              </div>
             </div>
 
             <div className="relative animate-scale-in">
