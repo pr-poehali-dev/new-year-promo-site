@@ -3,6 +3,7 @@ import Icon from "@/components/ui/icon";
 import { HeroSection } from "@/components/HeroSection";
 import { PromoSection } from "@/components/PromoSection";
 import { PrizesAndServices } from "@/components/PrizesAndServices";
+import { GrandPrizeSection } from "@/components/GrandPrizeSection";
 import { BeforeAfterGallery } from "@/components/BeforeAfterGallery";
 import { ReviewsAndContacts } from "@/components/ReviewsAndContacts";
 
@@ -28,6 +29,9 @@ const Index = () => {
               <button onClick={() => scrollToSection('prizes')} className="text-sm hover:text-primary transition-colors">
                 Призы
               </button>
+              <button onClick={() => scrollToSection('grand-prize')} className="text-sm hover:text-primary transition-colors">
+                Главный приз
+              </button>
               <button onClick={() => scrollToSection('services')} className="text-sm hover:text-primary transition-colors">
                 Услуги
               </button>
@@ -51,6 +55,7 @@ const Index = () => {
       <HeroSection scrollToSection={scrollToSection} />
       <PromoSection />
       <PrizesAndServices />
+      <GrandPrizeSection />
       <BeforeAfterGallery />
       <ReviewsAndContacts scrollToSection={scrollToSection} />
     </div>
