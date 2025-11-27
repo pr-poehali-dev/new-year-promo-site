@@ -77,7 +77,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Icon name="Sparkles" className="text-primary" size={24} />
-              <span className="font-bold text-xl">Aesthetics</span>
+              <span className="font-bold text-xl">Мой косметолог</span>
             </div>
             <div className="hidden md:flex items-center gap-6">
               <button onClick={() => scrollToSection('promo')} className="text-sm hover:text-primary transition-colors">
@@ -131,7 +131,7 @@ const Index = () => {
               <div className="flex items-center gap-6 pt-4">
                 <div className="flex items-center gap-2">
                   <Icon name="Award" className="text-primary" size={24} />
-                  <span className="text-sm font-medium">15+ лет опыта</span>
+                  <span className="text-sm font-medium">Опытный косметолог</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Users" className="text-primary" size={24} />
@@ -331,8 +331,8 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="font-medium mb-1">Телефон</p>
-                    <a href="tel:+79991234567" className="text-lg hover:text-primary transition-colors">
-                      +7 (999) 123-45-67
+                    <a href="tel:+79181352147" className="text-lg hover:text-primary transition-colors">
+                      +7 (918) 135-21-47
                     </a>
                   </div>
                 </div>
@@ -356,7 +356,7 @@ const Index = () => {
                   <div>
                     <p className="font-medium mb-1">Адрес</p>
                     <p className="text-lg text-muted-foreground">
-                      г. Москва, ул. Примерная, д. 1
+                      г. Краснодар, ул. Рылеева, д. 179/1
                     </p>
                   </div>
                 </div>
@@ -399,10 +399,10 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Sparkles" size={24} />
-                <span className="font-bold text-xl">Aesthetics</span>
+                <span className="font-bold text-xl">Мой косметолог</span>
               </div>
               <p className="text-secondary-foreground/80">
-                Кабинет эстетической косметологии. Профессиональный уход и забота о вашей красоте.
+                Эстетик-студио Ланы Рудневой. Профессиональный уход и забота о вашей красоте.
               </p>
             </div>
             
@@ -441,7 +441,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-secondary-foreground/20 pt-8 text-center text-secondary-foreground/60">
-            <p>© 2025 Aesthetics. Все права защищены.</p>
+            <p>© 2025 Мой косметолог. Все права защищены.</p>
           </div>
         </div>
       </footer>
